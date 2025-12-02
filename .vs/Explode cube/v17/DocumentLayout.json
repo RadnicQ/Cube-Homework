@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\UnityProjects\\Explode cube\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|I:\\UnityProjects\\Explode cube\\assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|I:\\UnityProjects\\Explode cube\\assets\\scripts\\colorizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\colorizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|i:\\unityprojects\\explode cube\\assets\\scripts\\spawn cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawn cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|I:\\UnityProjects\\Explode cube\\assets\\scripts\\click mouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F5E64A-6BC2-0009-4241-C094AD2F3583}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\click mouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Colorizer.cs",
+              "DocumentMoniker": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Colorizer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Colorizer.cs",
+              "ToolTip": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Colorizer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Colorizer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T00:17:37.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Explode.cs",
+              "DocumentMoniker": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Explode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Explode.cs",
+              "ToolTip": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Explode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Explode.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:16:10.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Spawn Cube.cs",
+              "DocumentMoniker": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Spawn Cube.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawn Cube.cs",
+              "ToolTip": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Spawn Cube.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawn Cube.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T21:37:41.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Click Mouse.cs",
+              "DocumentMoniker": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Click Mouse.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Click Mouse.cs",
+              "ToolTip": "I:\\UnityProjects\\Explode cube\\Assets\\Scripts\\Click Mouse.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Click Mouse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T21:25:36.91Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
