@@ -60,11 +60,13 @@
     <Analyzer Include="I:\Unity\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Click Mouse.cs" />
     <Compile Include="Assets\Scripts\Colorizer.cs" />
-    <Compile Include="Assets\Scripts\Spawn Cube.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\SpawnController.cs" />
     <Compile Include="Assets\Scripts\Clonable.cs" />
-    <Compile Include="Assets\Scripts\Explode.cs" />
+    <Compile Include="Assets\Scripts\Clicker.cs" />
+    <Compile Include="Assets\Scripts\Raycaster.cs" />
+    <Compile Include="Assets\Scripts\Exploder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
