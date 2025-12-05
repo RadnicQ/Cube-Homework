@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnController : MonoBehaviour
+public class SpawnInspector : MonoBehaviour
 {
     private Raycaster _raycaster;
     private Spawner _spawner;
@@ -30,7 +28,7 @@ public class SpawnController : MonoBehaviour
         {
             if (IsSuccessfulChance(clonable))
             {
-                List<Rigidbody> spawners = _spawner.InstantiateCube(hit);
+                List<Rigidbody> spawners = _spawner.GetSpawnablesRaycastHitObject(hit);
                 _exploder.AddForce(spawners, hit);
             }
 
@@ -40,8 +38,8 @@ public class SpawnController : MonoBehaviour
 
     private bool IsSuccessfulChance(Clonable clonable)
     {
-        int randomNumber = UnityEngine.Random.Range(_minimumChance, _maximumChance + 1);
-        int spawnChance = clonable.GetChance();
+        int randomNumber = Random.Range(_minimumChance, _maximumChance + 1);
+        int spawnChance = clonable.DivideChance;
 
         return randomNumber < spawnChance;
     }

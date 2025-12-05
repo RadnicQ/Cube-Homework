@@ -1,17 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Clonable : MonoBehaviour 
+public class Clonable : MonoBehaviour
 {
-    [SerializeField] private int _divideChance = 100;
-    private int _divisionFactor = 2;
+    public int DivisionFactor { get; private set; } = 2;
+    public int DivideChance { get; private set; } = 100;
 
-    public int GetChance()
+    private void Awake()
     {
-        int chance = _divideChance;
-        _divideChance /= _divisionFactor;
+        GetComponent<Renderer>().material.color = Random.ColorHSV();
+    }
 
-        return chance;
+    public void Initialization(int divideChance, Vector3 scaleValue)
+    {
+        DivideChance = divideChance;
+        transform.localScale = scaleValue;
     }
 }

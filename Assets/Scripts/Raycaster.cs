@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Raycaster : MonoBehaviour
@@ -20,10 +19,10 @@ public class Raycaster : MonoBehaviour
     }
 
     private void OnEnable() =>
-        _clickMouse.OnClick += SetOffRay;
+        _clickMouse.Click += SetOffRay;
 
     private void OnDisable() =>
-        _clickMouse.OnClick -= SetOffRay;
+        _clickMouse.Click -= SetOffRay;
 
     private void SetOffRay()
     {
