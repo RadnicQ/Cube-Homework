@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Spawner), typeof(Exploder))]
+
 public class SpawnInspector : MonoBehaviour
 {
+    private Camera _mainCamera;
     private Raycaster _raycaster;
     private Spawner _spawner;
     private Exploder _exploder;
@@ -11,7 +14,8 @@ public class SpawnInspector : MonoBehaviour
 
     private void Awake()
     {
-        _raycaster = Camera.main.GetComponent<Raycaster>();
+        _mainCamera = Camera.main;
+        _mainCamera.TryGetComponent(out _raycaster);
         _spawner = GetComponent<Spawner>();
         _exploder = GetComponent<Exploder>();
     }

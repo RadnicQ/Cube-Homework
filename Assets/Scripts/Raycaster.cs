@@ -1,12 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+[RequireComponent(typeof(Clicker))]
 
 public class Raycaster : MonoBehaviour
 {
     [SerializeField] private float _rayDistanse = 100f;
 
+    private Camera _mainCamera;
     private Clicker _clickMouse;
     private Ray _ray;
     private RaycastHit _hit;
@@ -16,6 +17,7 @@ public class Raycaster : MonoBehaviour
     private void Awake()
     {
         _clickMouse = GetComponent<Clicker>();
+        _mainCamera = Camera.main;
     }
 
     private void OnEnable() =>
@@ -26,7 +28,7 @@ public class Raycaster : MonoBehaviour
 
     private void SetOffRay()
     {
-        _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
 
         if (Physics.Raycast(_ray, out _hit, _rayDistanse))
             HitInfo?.Invoke(_hit);

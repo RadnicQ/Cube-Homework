@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     public List<Rigidbody> GetSpawnablesRaycastHitObject(RaycastHit hit)
     {
         List<Rigidbody> spawnObjects = new();
-        Clonable clonable = hit.collider.GetComponent<Clonable>();
+        hit.collider.TryGetComponent(out Clonable clonable);
         int cubeCount = Random.Range(_minimumObjectSpawnCount, _maximumObjectSpawnCount + 1);
         int divideChance = clonable.DivideChance / clonable.DivisionFactor;
         Vector3 spawnObjectScale = hit.transform.localScale * _downScaleValue;
@@ -21,7 +21,8 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < cubeCount; i++)
         {
             spawnObjects.Add(Instantiate(_spawnObject, hit.transform.position, hit.transform.rotation));
-            spawnObjects[i].GetComponent<Clonable>().Initialization(divideChance, spawnObjectScale);
+            spawnObjects[i].TryGetComponent(out Clonable spawningClonable);
+            spawningClonable.Initialization(divideChance, spawnObjectScale);
         }
 
         return spawnObjects;
