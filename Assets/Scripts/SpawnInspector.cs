@@ -32,7 +32,7 @@ public class SpawnInspector : MonoBehaviour
         {
             if (IsSuccessfulChance(clonable))
             {
-                List<Rigidbody> spawners = _spawner.GetSpawnablesRaycastHitObject(hit);
+                List<Rigidbody> spawners = _spawner.GetSpawnablesRaycastHitObject(clonable);
                 _exploder.AddForce(spawners, hit);
             }
 

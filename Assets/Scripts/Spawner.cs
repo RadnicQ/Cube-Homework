@@ -8,21 +8,18 @@ public class Spawner : MonoBehaviour
     private int _maximumObjectSpawnCount = 6;
     private float _downScaleValue = 0.5f;
 
-    public List<Rigidbody> GetSpawnablesRaycastHitObject(RaycastHit hit)
+    public List<Rigidbody> GetSpawnablesRaycastHitObject(Clonable clonoble)
     {
         List<Rigidbody> spawnObjects = new();
-        hit.collider.TryGetComponent(out Clonable clonable);
         int cubeCount = Random.Range(_minimumObjectSpawnCount, _maximumObjectSpawnCount + 1);
-        int divideChance = clonable.DivideChance / clonable.DivisionFactor;
-        Vector3 spawnObjectScale = hit.transform.localScale * _downScaleValue;
-
-        _spawnObject = hit.collider.attachedRigidbody;
+        int divideChance = clonoble.DivideChance / clonoble.DivisionFactor;
+        Vector3 spawnObjectScale = clonoble.transform.localScale * _downScaleValue;
+        _spawnObject = clonoble.GetComponent<Rigidbody>();
 
         for (int i = 0; i < cubeCount; i++)
         {
-            spawnObjects.Add(Instantiate(_spawnObject, hit.transform.position, hit.transform.rotation));
-            spawnObjects[i].TryGetComponent(out Clonable spawningClonable);
-            spawningClonable.Initialization(divideChance, spawnObjectScale);
+            spawnObjects.Add(Instantiate(_spawnObject, clonoble.transform.position, clonoble.transform.rotation));
+            spawnObjects[i].GetComponent<Clonable>().Initialization(divideChance, spawnObjectScale);
         }
 
         return spawnObjects;

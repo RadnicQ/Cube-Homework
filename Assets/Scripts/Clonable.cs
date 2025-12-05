@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Renderer), typeof(Rigidbody))]
+
 public class Clonable : MonoBehaviour
 {
     public int DivisionFactor { get; private set; } = 2;
