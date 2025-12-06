@@ -6,9 +6,11 @@ public class Clonable : MonoBehaviour
 {
     public int DivisionFactor { get; private set; } = 2;
     public int DivideChance { get; private set; } = 100;
+    public Rigidbody Rigidbody { get; private set; }
 
     private void Awake()
     {
+        Rigidbody = GetComponent<Rigidbody>();
         GetComponent<Renderer>().material.color = Random.ColorHSV();
     }
 
