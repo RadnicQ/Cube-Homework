@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < cubeCount; i++)
         {
             spawnObjects.Add(Instantiate(_spawnObject, clonoble.transform.position, clonoble.transform.rotation));
-            spawnObjects[i].GetComponent<Clonable>().Initialization(divideChance, spawnObjectScale);
+            spawnObjects[i].GetComponent<Clonable>().Initialize(divideChance, spawnObjectScale);
         }
 
         return spawnObjects;

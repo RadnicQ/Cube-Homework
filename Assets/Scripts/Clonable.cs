@@ -12,7 +12,7 @@ public class Clonable : MonoBehaviour
         GetComponent<Renderer>().material.color = Random.ColorHSV();
     }
 
-    public void Initialization(int divideChance, Vector3 scaleValue)
+    public void Initialize(int divideChance, Vector3 scaleValue)
     {
         DivideChance = divideChance;
         transform.localScale = scaleValue;

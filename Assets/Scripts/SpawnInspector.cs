@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class SpawnInspector : MonoBehaviour
 {
+    [SerializeField] private Raycaster _raycaster;
+
     private Camera _mainCamera;
-    private Raycaster _raycaster;
     private Spawner _spawner;
     private Exploder _exploder;
     private int _minimumChance = 0;
@@ -16,7 +17,6 @@ public class SpawnInspector : MonoBehaviour
     private void Awake()
     {
         _mainCamera = Camera.main;
-        _mainCamera.TryGetComponent(out _raycaster);
         _spawner = GetComponent<Spawner>();
         _exploder = GetComponent<Exploder>();
     }
