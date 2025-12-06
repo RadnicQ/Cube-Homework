@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Spawner), typeof(Exploder))]
@@ -34,6 +35,10 @@ public class SpawnInspector : MonoBehaviour
             {
                 List<Rigidbody> spawners = _spawner.GetSpawnablesRaycastHitObject(clonable);
                 _exploder.AddForce(spawners, hit);
+            }
+            else
+            {
+                _exploder.AddForce(hit);
             }
 
             Destroy(hit.collider.gameObject);
